@@ -11,6 +11,13 @@
         <%= submit_tag "Buscar", name: nil, class: "btn btn-primary btn-md" %>
       <% end %>
     </div>
+<!-- 
+1) Aqui debería haber un form para poderme llevar esa info en params, no?
+
+2) Dentro del form un hidden input con los valores de la búsqueda para poder filtrar.
+
+3) Dónde carajos filtro -->
+
     <div class="col-sm-9">
       <table class="table" id="transactions">
         <thead>
@@ -33,6 +40,7 @@
               <td class="text-right amount" style="width: 170px;"><%= number_to_currency(expense.amount, precision: 0) %></td>
             </tr>
           <% end %>
+
         </tbody>
       </table>
     </div>

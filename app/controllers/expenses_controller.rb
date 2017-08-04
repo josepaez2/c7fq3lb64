@@ -19,5 +19,11 @@ before_action :authenticate_user!
       format.js
       format.json { render json: @responses }
     end
+
+		UserMailer.welcome(@current_user, @expenses).deliver_now
+		# UserMailer.welcome(@current_user).deliver_later
+		# se hace con background job
+		
+		# flash[:success] = "Has iniciado sesión"
   end
 end

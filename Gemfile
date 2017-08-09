@@ -23,7 +23,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
   # bundle exec rake doc:rails generates the API under doc/api.     # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+# Perform jobs
+gem 'sidekiq'
 
 group :development do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console       # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -36,4 +37,6 @@ group :development do
   gem 'spring'
   # Ver los mails que va mandar
   gem 'letter_opener'
+  # Perform jobs
+  gem 'sidekiq'
 end
